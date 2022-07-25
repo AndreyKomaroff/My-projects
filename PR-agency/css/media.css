@@ -1,0 +1,337 @@
+@import url(vars.css);
+
+@media (max-width: 768px) {
+
+    /*  header  */
+
+    .header {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .logo__name {
+        display: none;
+    }
+
+
+    /*  hero  */
+
+    .hero__main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero__left-block {
+        align-items: center;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .hero__content {
+        text-align: center;
+    }
+
+    .hero__list {
+        padding: 15px 0;
+    }
+
+    .hero__btn {
+        /*max-width: 290px;*/
+        justify-content: center;
+    }
+
+    /*  about  */
+
+    .about__left-block {}
+
+    .title__section {
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .about__content {
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .about__item {
+        margin-right: 30px;
+    }
+
+    .about__results {
+        grid-template-columns: repeat(3, minmax(50px, 250px));
+        grid-template-rows: minmax(50px, 150px);
+    }
+
+    .about__results-block {
+        padding: 10px 10px;
+    }
+
+    .about__results-content {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .about__results-param {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    /*  services  */
+
+    .services__main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 100px);
+        gap: 20px;
+    }
+
+    .services__item {
+        padding: 10px 15px;
+        align-items: center;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .services__item svg {
+        width: 50px;
+    }
+
+    .services__span svg {
+        width: 40px;
+    }
+
+    /*  cooperation  */
+
+    .cooperation__list {
+        grid-template-columns: repeat(3, minmax(190px, 405px));
+        grid-template-rows: repeat(3, minmax(100px, 125px));
+        gap: 20px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    /*  team  */
+
+    .team__list {
+        padding: 20px;
+        grid-template-columns: repeat(4, minmax(100px, 250px));
+        grid-template-rows: minmax(100px, 250px);
+        gap: 40px;
+    }
+
+
+}
+
+@media (max-width: 660px) {
+
+    /*  header  */
+
+    .nav__item {
+        margin-right: 30px;
+    }
+
+    /*  hero  */
+
+    .hero__left-block {}
+
+    .title {
+        max-width: 350px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .title__section {
+        margin-bottom: 15px;
+    }
+
+    .hero__content {
+        max-width: 350px;
+        margin-bottom: 30px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .hero__btn {
+        flex-direction: column;
+    }
+
+    .hero__item {
+        padding-right: 40px;
+        margin-right: 40px;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .hero__item:last-child {
+        padding-right: 0;
+    }
+
+    /*  about  */
+
+    .about__line__list {
+        width: 100%;
+        margin-right: 5px;
+        padding: 5px;
+    }
+
+    .about__main {
+        padding: 60px 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        grid-template-rows: 70px 2fr 1fr;
+        grid-template-areas:
+            "first"
+            "second"
+            "third";
+    }
+
+    /*.about__left-block {
+        width: calc(100% - 30px);
+    }
+
+    .about__right-block {
+        width: calc(100% - 30px);
+    }*/
+
+    .about__results {
+        grid-template-columns: repeat(3, minmax(80px, 350px));
+        grid-template-rows: repeat(3, 50px);
+        row-gap: 20px;
+        grid-template-areas:
+            "one two three"
+            "four five six"
+            "seven eight nine";
+    }
+
+    .title__section {
+        width: calc(100% - 20px);
+    }
+
+    .about__results-block:nth-child(1) {
+        grid-area: two;
+    }
+
+    .about__results-block:nth-child(2) {
+        grid-area: five;
+    }
+
+    .about__results-block:nth-child(3) {
+        grid-area: eight;
+    }
+
+    /*.about__results-block-one {
+        grid-template-columns: start / end;
+    }
+
+    .about__results-block-two {
+        grid-area: five;
+    }
+
+    .about__results-block-three {
+        grid-area: seven;
+    }*/
+
+    .about__list {
+        padding: 5px;
+    }
+
+    .about__content {
+        width: calc(100% - 20px);
+    }
+
+    /*  services  */
+
+    .services__main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto repeat(5, 70px);
+        gap: 10px;
+    }
+
+    /*.services__title {
+        margin-bottom: 15px;
+        text-align: center;
+    }*/
+
+    .services__item {
+        padding: 10px;
+    }
+
+    .services__span svg {
+        width: 30px;
+    }
+
+    .services__item svg {
+        width: 30px;
+    }
+
+    /*  cooperation  */
+
+    .cooperation__list {
+        grid-template-columns: repeat(3, minmax(100px, 405px));
+        grid-template-rows: repeat(3, minmax(40px, 125px));
+        gap: 10px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .cooperation__item {
+        padding: 10px;
+    }
+
+    /*  team  */
+
+    .team__list {
+        padding: 15px;
+        grid-template-columns: repeat(2, minmax(100px, 330px));
+        grid-template-rows: repeat(2, minmax(100px, 330px));
+        gap: 20px;
+        grid-template-areas:
+            "one two"
+            "three four";
+    }
+
+    .team__item:nth-child(1) {
+        grid-area: one;
+    }
+
+    .team__item:nth-child(2) {
+        grid-area: two;
+    }
+
+    .team__item:nth-child(3) {
+        grid-area: three;
+    }
+
+    .team__item:nth-child(4) {
+        grid-area: four;
+    }
+
+    /*  footer  */
+
+    .contacts__param {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 400px) {}
