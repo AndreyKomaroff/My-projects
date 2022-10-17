@@ -23,18 +23,6 @@ p {
   margin: 0;
 }
 
-/*
-@font-face {
-  font-family: 'Gilroy';
-  src: local('Gilroy-Regular'),
-    url(../fonts/Gilroy-Regular.woff2) format("woff2"),
-    url(../fonts/Gilroy-Regular.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}*/
-
-
 @font-face {
   font-family: 'BaiJamjuree';
   src: local('BaiJamjuree-Regular'),
@@ -75,45 +63,11 @@ p {
   font-display: swap;
 }
 
-
-/*
-@font-face {
-  font-family: 'Gilroy';
-  src: local('Gilroy-Medium'),
-    url(../fonts/Gilroy-Medium.woff2) format("woff2"),
-    url(../fonts/Gilroy-Medium.woff) format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: local('Gilroy-SemiBold'),
-    url(../fonts/Gilroy-SemiBold.woff2) format("woff2"),
-    url(../fonts/Gilroy-SemiBold.woff) format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: local('Gilroy-Bold'),
-    url(../fonts/Gilroy-Bold.woff2) format("woff2"),
-    url(../fonts/Gilroy-Bold.woff) format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}*/
-
-
 body {
   min-width: 320px;
   font-family: 'BaiJamjuree', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  /*background-color: var(--grey_color);*/
 }
 
 /*glob*/
@@ -259,6 +213,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px 35px;
+  color: var(--black_color);
   border: var(--orange_color) 1px solid;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease-in-out,
@@ -269,7 +224,6 @@ body {
 .btn:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.25);
-
 }
 
 .btn-first {
@@ -277,6 +231,7 @@ body {
 }
 
 .btn-second {
+  color: var(--black_color);
   background-color: var(--orange_color);
 }
 
@@ -604,7 +559,7 @@ body {
 
 .cooperation__list {
   display: grid;
-  padding: 0 15px;
+  padding: 0;
   grid-template-columns: repeat(3, minmax(200px, 405px));
   grid-template-rows: repeat(3, minmax(100px, 125px));
   gap: 40px;
@@ -669,6 +624,7 @@ body {
 
 .footer__title {
   grid-area: one;
+  margin: 0;
 }
 
 .contacts__content {
@@ -690,9 +646,28 @@ body {
 }
 
 .social svg {
-  width: 50px;
+  width: 35px;
   cursor: pointer;
 }
+
+.social__telegram {
+  margin-right: 25px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social__vk {
+  transition: transform 0.3s ease-in-out;
+}
+
+.social__telegram:hover {
+  transform: scale(1.2);
+}
+
+.social__vk:hover {
+  transform: scale(1.2);
+}
+
+
 
 .contacts__logo {
   grid-area: four;

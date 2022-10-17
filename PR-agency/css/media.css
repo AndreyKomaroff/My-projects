@@ -46,10 +46,8 @@
 
     /*  about  */
 
-    .about__left-block {}
 
     .title__section {
-        margin-bottom: 50px;
         font-weight: 700;
         font-size: 25px;
         line-height: 25px;
@@ -157,7 +155,9 @@
         gap: 40px;
     }
 
-
+    .social__telegram {
+        margin-right: 25px;
+    }
 }
 
 @media (max-width: 660px) {
@@ -170,18 +170,12 @@
 
     /*  hero  */
 
-    .hero__left-block {}
-
     .title {
         max-width: 350px;
         margin-bottom: 30px;
         font-weight: 700;
         font-size: 40px;
         line-height: 40px;
-    }
-
-    .title__section {
-        margin-bottom: 15px;
     }
 
     .hero__content {
@@ -234,14 +228,6 @@
             "third";
     }
 
-    /*.about__left-block {
-        width: calc(100% - 30px);
-    }
-
-    .about__right-block {
-        width: calc(100% - 30px);
-    }*/
-
     .about__results {
         grid-template-columns: repeat(4, minmax(80px, 350px));
         grid-template-rows: repeat(3, 50px);
@@ -264,19 +250,6 @@
         grid-column: 2 / 4;
     }
 
-
-    /*.about__results-block-one {
-        grid-template-columns: start / end;
-    }
-
-    .about__results-block-two {
-        grid-area: five;
-    }
-
-    .about__results-block-three {
-        grid-area: seven;
-    }*/
-
     .about__list {
         padding: 5px;
     }
@@ -292,11 +265,6 @@
         grid-template-rows: auto repeat(5, 70px);
         gap: 10px;
     }
-
-    /*.services__title {
-        margin-bottom: 15px;
-        text-align: center;
-    }*/
 
     .services__item {
         padding: 10px;
@@ -372,7 +340,9 @@
         text-align: center;
     }
 
-
+    .social__telegram {
+        margin-right: 25px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -435,24 +405,6 @@
         line-height: 20px;
     }
 
-    /*.slider__background-one {
-        background-image: url(../img/slide320-1.png);
-      }
-      
-      .slider__background-two {
-        background-image: url(../img/slide320-2.png);
-      }
-      
-      .slider__background-three {
-        background-image: url(../img/slide320-3.png);
-      }
-      
-      .slider__background-four {
-        background-image: url(../img/slide320-4.png);
-      }
-*/
-
-
     .slider__list {
         list-style: none;
     }
@@ -485,6 +437,9 @@
         grid-template-rows: repeat(2, minmax(100px, 260px));
     }
 
+    .social__telegram {
+        margin-right: 25px;
+    }
 
 }
 
@@ -539,12 +494,14 @@
 
     .team__main {
         width: calc(100% - 20px);
-
     }
 
     .contacts {
         width: calc(100% - 20px);
+    }
 
+    .social__telegram {
+        margin-right: 25px;
     }
 
 }
