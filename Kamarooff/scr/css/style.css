@@ -159,8 +159,6 @@ section {
 }
 
 
-
-
 .nav {
     padding: 20px 0;
     justify-content: space-between;
@@ -170,7 +168,7 @@ section {
 }
 
 .nav__logo {
-    padding: 0 30px;
+    padding: 0;
     align-items: center;
 }
 
@@ -187,7 +185,11 @@ section {
     margin-right: 50px;
     cursor: pointer;
     grid-area: two;
-    transition: color 0.5s ease-in-out, transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav__item:hover {
+    transform: scale(1.2);
 }
 
 /*  main  */
@@ -199,9 +201,11 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     max-width: 1200px;
-    height: 566px;
+    height: 530px;
     background-image: url(../img/background.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: var(--white);
@@ -219,7 +223,6 @@ section {
     font-size: 48px;
     line-height: 64px;
 }
-
 
 .main__title-second {
     font-weight: 400;
@@ -248,10 +251,6 @@ section {
 .title__about {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
-
-    /*position: absolute;
-    left: 150px;
-    top: 803px;*/
 }
 
 
@@ -264,16 +263,13 @@ section {
     width: calc(100% / 2);
 }
 
-/*.about__right-block {
-    width: calc(100% / 3);
-}*/
-
-.about__foto {
-    max-width: 380px;
+.about__right-block {
+    justify-content: center;
 }
 
-
-
+.about__foto {
+    object-fit: cover;
+}
 
 .param-about {
     margin-bottom: 15px;
@@ -385,8 +381,8 @@ section {
 
 /*  training  */
 
-.training__img {
-    width: calc(100% / 2);
+.training__pic {
+    max-height: 360px;
 }
 
 .title__training {
@@ -401,18 +397,33 @@ section {
 
 .training__item {
     margin-bottom: 30px;
+    padding: 70px 10px;
+    justify-content: end;
     background-color: var(--white);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.training__item:nth-child(1) {
+    background-image: url(../img/Kettlebells.jpg);
 }
 
 .training__item:nth-child(2) {
-    flex-direction: row-reverse;
     justify-content: space-between;
+    background-image: url(../img/new.jpg);
+    background-size: contain;
+    background-position: right;
 }
 
-.training__item-block {
-    padding: 30px;
-    width: calc(100% / 2);
+.training__item:nth-child(3) {
+    background-image: url(../img/Grip.jpg);
+}
 
+
+.training__item-block {
+    padding: 0 30px;
+    width: calc(100% / 2);
+    background-color: var(--white);
 }
 
 .training__title {
@@ -424,46 +435,54 @@ section {
 
 /*  products  */
 
-.products__main {
+.customs__main {
     padding: 50px 0;
     background-color: var(--mine-shaft);
     color: var(--white);
 }
 
-.title__products {
+.title__customs {
     position: absolute;
     left: 150px;
     top: 4243px;
 }
 
-.products__list {
+.customs__list {
     padding: 0 50px;
-}
-
-.products__item {
-    padding: 0;
     flex-direction: column;
-    gap: 30px;
     align-items: center;
-    justify-content: space-between;
 }
 
-.products__item:nth-child(1) {
+.customs__item {
+    margin: 0;
     margin-bottom: 30px;
-    border-bottom: 0.5px solid var(--gallery);
 }
 
-.title__products__img {
+.title__customs__img {
     position: relative;
 }
 
-.products__title {
-   width: calc(100% / 4);
+.customs__title {
+    width: calc(100% / 4);
 }
 
-.products__img {
-    /*width: calc(100% / 3);*/
+.btn {
+    display: flex;
+    max-width: 18em;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 35px;
+    color: var(--mine-shaft);
+    background-color: var(--ronchi);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
+.btn:hover {
+    background-color: var(--golden_tainoi);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 5px 5px rgba(99, 90, 90, 0.25);
+}
+
 
 /*  footer  */
 
@@ -494,6 +513,14 @@ section {
 
 .footer__social {
     flex-direction: column;
+}
+
+.social__link {
+    transition: transform 0.3s ease-in-out;
+}
+
+.social__link:hover {
+    transform: scale(1.2);
 }
 
 .svg {
