@@ -46,6 +46,10 @@
         left: 0;
     }
 
+    .training__item {
+        padding: 20px;
+    }
+
 
 
 }
