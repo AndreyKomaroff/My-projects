@@ -1,0 +1,133 @@
+.title--block {
+  padding-left: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+
+  &__img {
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+    max-width: 175px;
+    opacity: 0.3;
+  }
+
+  &__text {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+  }
+}
+
+
+.about--main {
+  @include flex;
+  justify-content: space-between;
+
+  @include mini-tablet {
+    flex-direction: column
+  }
+}
+
+.about--main__left {
+    @include flex;
+    flex-direction: column;
+    width: calc(100% / 2);
+
+    @include mini-tablet {
+      width: 100%;
+    }
+
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 48px;
+    }
+}
+
+.about--main__right {
+    @include flex;
+    justify-content: center;
+}
+
+.about--main__side {
+    padding: 100px 50px;
+    background-color: var(--mine-shaft);
+    color: var(--white);
+
+    .about__list {
+      @include flex;
+      justify-content: space-between;
+    }
+
+    .about__item {
+      position: relative;
+
+      &--subtitle {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 53px;
+      }
+
+      &--param {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      &:nth-child(1)::after {
+        position: absolute;
+        content: "10";
+        bottom: 50%;
+        left: 0;
+        text-align: center;
+        font-weight: 400;
+        font-size: 120px;
+        line-height: 120px;
+        color: rgba(255, 255, 255, 0.08);
+
+        @include mini-tablet {
+          font-weight: 400;
+          font-size: 80px;
+          line-height: 80px;
+        }
+    }
+
+      &:nth-child(2)::after {
+        position: absolute;
+        content: "100";
+        bottom: 50%;
+        left: 0;
+        font-weight: 400;
+        font-size: 120px;
+        line-height: 120px;
+        color: rgba(255, 255, 255, 0.08);
+
+        @include mini-tablet {
+          font-weight: 400;
+          font-size: 80px;
+          line-height: 80px;
+        }
+
+    }
+
+      &:nth-child(3)::after {
+        position: absolute;
+        content: "20";
+        bottom: 50%;
+        left: 0;
+        font-weight: 400;
+        font-size: 120px;
+        line-height: 120px;
+        color: rgba(255, 255, 255, 0.08);
+
+        @include mini-tablet {
+          font-weight: 400;
+          font-size: 80px;
+          line-height: 80px;
+        }
+
+    }
+
+
+}
+}

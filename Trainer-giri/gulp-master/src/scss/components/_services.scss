@@ -1,0 +1,42 @@
+.services {
+  &__list {
+    @include flex;
+    justify-content: space-between;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3 - 20px);
+    background-color: var(--mine-shaft);
+    color: var(--white);
+
+    @include small-tablet {
+      width: 100%;
+      margin-bottom: 35px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    svg {
+      fill: var(--white);
+    }
+
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 110%;
+  }
+}
