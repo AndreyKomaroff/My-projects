@@ -32,11 +32,21 @@
       flex-direction: row;
     }
 
+    @include small-mobile {
+      margin: 0;
+      flex-direction: column;
+    }
+
     svg {
       max-width: 120px;
 
       @include mini-tablet {
-        margin-right: 35px
+        margin: 0;
+      }
+
+      @include mobile {
+        width: 80px;
+        height: 80px;
       }
     }
 
@@ -44,7 +54,6 @@
 
   &__social {
     @include flex;
-    width: 100px;
     flex-direction: column;
     justify-content: space-between;
 
@@ -59,7 +68,23 @@
 }
 
 .social__link {
+  max-width: 40px;
   transition: transform 0.3s ease-in-out;
+
+  @include mini-tablet {
+    margin-right: 25px;
+  }
+
+  @include mobile {
+    margin-right: 10px;
+  }
+
+
+  svg {
+    width: 36px;
+    height: 36px;
+
+  }
 
   &:hover {
     transform: scale(1.2);

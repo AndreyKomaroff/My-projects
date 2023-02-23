@@ -24,7 +24,12 @@
       font-weight: 600;
       font-size: 50px;
       line-height: 60px;
+    }
 
+    @include mobile {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 43px;
     }
 
   }
@@ -39,7 +44,12 @@
       font-weight: 600;
       font-size: 35px;
       line-height: 45px;
+    }
 
+    @include mobile {
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 35px;
     }
   }
 

@@ -21,6 +21,12 @@
       font-size: 36px;
       line-height: 48px;
       text-align: center;
+
+      @include small-mobile {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 35px;
+      }
     }
   }
 

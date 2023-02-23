@@ -4,11 +4,19 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
 
+  @include mobile {
+    padding-left: 20px;
+  }
+
   &__img {
     grid-column: 1 / 4;
     grid-row: 1 / 4;
     max-width: 175px;
     opacity: 0.3;
+
+    @include mobile {
+      max-width: 100px;
+    }
   }
 
   &__text {
@@ -51,21 +59,47 @@
 
 .about--main__side {
     padding: 100px 50px;
+    display: flex;
+    justify-content: center;
     background-color: var(--mine-shaft);
     color: var(--white);
+
+    @include small-tablet {
+      padding: 50px 30px;
+
+    }
 
     .about__list {
       @include flex;
       justify-content: space-between;
+
+      @include small-tablet {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
     }
 
     .about__item {
       position: relative;
+      margin: 0;
+      margin-right: 15px;
+
+      @include small-tablet {
+        margin: 0;
+      }
 
       &--subtitle {
         font-weight: 400;
         font-size: 40px;
         line-height: 53px;
+
+        @include small-mobile {
+          font-weight: 400;
+          font-size: 33px;
+          line-height: 43px;
+        }
       }
 
       &--param {
@@ -73,6 +107,11 @@
         font-size: 24px;
         line-height: 32px;
       }
+
+      @include small-tablet {
+        text-align: center;
+      }
+
 
       &:nth-child(1)::after {
         position: absolute;
@@ -90,6 +129,13 @@
           font-size: 80px;
           line-height: 80px;
         }
+
+        @include small-tablet {
+          bottom: 50%;
+          left: 37%;
+          text-align: center;
+        }
+
     }
 
       &:nth-child(2)::after {
@@ -107,6 +153,11 @@
           font-size: 80px;
           line-height: 80px;
         }
+
+        @include small-tablet {
+          bottom: 50%;
+          left: 25%;
+          }
 
     }
 
@@ -126,8 +177,33 @@
           line-height: 80px;
         }
 
+        @include small-tablet {
+          bottom: 50%;
+          left: 37%;
+          text-align: center;
+        }
+
     }
-
-
 }
 }
+
+.subtitle {
+  margin: 0;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+
+  @include mobile {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+.param--text {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+
