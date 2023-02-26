@@ -1,0 +1,33 @@
+.vingot {
+  &__main {
+    @include flex-all-center;
+    flex-direction: column;
+    text-align: center
+  }
+
+  &__block {
+    @include flex-all-center;
+    flex-direction: column;
+
+
+  }
+
+  &__param {
+    margin: 0;
+    margin-bottom: 25px;
+
+    span {
+      font-style: oblique;
+  }
+
+  .video-block {
+    display: flex;
+
+    &__link {
+      margin-right: 20px;
+    }
+    }
+  }
+  }
+
+

@@ -1,0 +1,21 @@
+.grip {
+
+  &__main {
+    @include flex-all-center;
+    flex-direction: column;
+  }
+
+  &__vingot {
+    @include flex-all-center;
+    margin: 0;
+    padding: 80px;
+    margin-bottom: 50px;
+    background-image: url(../img/vingot.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__btn {
+    text-align: center;
+  }
+}

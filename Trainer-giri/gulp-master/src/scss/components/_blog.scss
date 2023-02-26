@@ -1,0 +1,33 @@
+.blog {
+
+  &__main {
+    @include flex-all-center;
+    flex-direction: column;
+  }
+
+  &__trainings {
+    @include flex-all-center;
+    margin: 0;
+    padding: 150px;
+    width: 50%;
+    margin-bottom: 50px;
+    background-image: url(../img/blogTrainings.jpg);
+    background-size: cover;
+  }
+
+  &__grip {
+    @include flex-all-center;
+    margin: 0;
+    padding: 150px;
+    width: 50%;
+    margin-bottom: 50px;
+    background-image: url(../img/blogGrip.jpg);
+    background-size: cover;
+
+  }
+
+  &__btn {
+    text-align: center;
+  }
+
+}

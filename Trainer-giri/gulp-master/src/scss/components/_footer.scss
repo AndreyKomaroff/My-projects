@@ -12,15 +12,11 @@
 
   &__list {
     @include flex;
+    flex-direction: column;
 
     @include mini-tablet {
       display: none;
     }
-  }
-
-  &__item {
-    margin-right: 30px;
-
   }
 
   &__logo {

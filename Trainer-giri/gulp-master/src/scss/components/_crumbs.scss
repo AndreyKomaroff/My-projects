@@ -1,0 +1,22 @@
+.crumbs {
+  padding: 0;
+  display: flex;
+  cursor: pointer;
+  list-style: none;
+
+  @include mobile {
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    padding: 5px;
+
+
+    &::after {
+      padding: 8px;
+      color: black;
+      content: "/\00a0";
+    }
+  }
+
+}
