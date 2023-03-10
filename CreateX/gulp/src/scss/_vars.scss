@@ -1,0 +1,16 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Lato", sans-serif;
+  --content-width: 1230px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --btn-gradient: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  --white: #FFFFFF;
+  --primary: #FF3F3A;
+  --sunglow: #FFCF2D;
+  --storm-gray: #787A80;
+}

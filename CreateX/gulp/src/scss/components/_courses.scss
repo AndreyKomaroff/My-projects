@@ -1,0 +1,129 @@
+.courses {
+
+  padding-top: 180px;
+
+  &__main {
+    @include flex;
+
+    flex-direction: column;
+
+    &--block {
+      @include flex;
+
+      width: 100%;
+      justify-content: space-between;
+
+      span {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+      }
+
+          }
+
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 60px;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+  }
+
+  &__btn {
+    max-width: 202px;
+    max-height: 52px;
+  }
+
+  &__list {
+    @include flex;
+
+    flex-wrap: wrap;
+
+  }
+
+  &__item {
+    @include flex;
+
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: calc(100% / 2 - 30px);
+    border: 1px solid #E5E8ED;
+    border-radius: 4px;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(5) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(6) {
+      margin-bottom: 0;
+    }
+
+
+
+    &--img {
+      max-width: 214px;
+    }
+
+    &--block {
+      padding: 32px;
+    }
+
+    &--span {
+      padding: 3px 7px;
+      display: inline-block;
+      border-radius: 4px;
+      color: var(--white);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  &__param {
+
+    &--span--first {
+      color: #FF4242;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+    }
+
+    &--span--second {
+      color: var(--storm-gray);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+    }
+  }
+
+  .color--first {
+    background: #03CEA4;
+  }
+
+  .color--second {
+    background: #5A87FC;
+  }
+
+  .color--third {
+    background: #F89828;
+
+  }
+
+  .color--four {
+    background: #F52F6E;
+  }
+
+}

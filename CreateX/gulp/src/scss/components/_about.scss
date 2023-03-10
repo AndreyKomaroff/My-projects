@@ -1,0 +1,70 @@
+.about {
+
+  padding-top: 180px;
+
+  &__main {
+    @include flex-all-center;
+
+    justify-content: space-between;
+
+    &--img {
+      margin-right: 70px;
+      width: calc(100% / 2);
+    }
+
+    &--left {
+      width: calc(100% / 2);
+      margin-right: 70px;
+    }
+
+    &--right {
+      width: calc(100% / 2);
+
+
+      span {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+      }
+    }
+
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+  }
+
+  &__list {
+    @include flex;
+
+    margin-bottom: 50px;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  &__item {
+    @include flex;
+
+    margin-bottom: 10px;
+
+    &::before {
+
+        content: url(../img/main/check.svg);
+        display: block;
+        margin-right: 16px;
+        width: 10px;
+        height: 10px;
+      }
+
+    }
+
+  }
+

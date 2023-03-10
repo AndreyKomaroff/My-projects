@@ -1,0 +1,72 @@
+.hero {
+  background-image: url(../img/main/background.jpg);
+
+
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+
+  }
+
+  &__block {
+    margin: 0;
+    grid-column: 1;
+    grid-row: 1 / 6;
+
+    &--title {
+      font-weight: 900;
+      font-size: 64px;
+      line-height: 130%;
+    }
+
+
+    &--btn {
+      @include flex;
+
+      &__first {
+        margin-right: 25px;
+      }
+
+    }
+  }
+
+  &__img {
+    margin: 0;
+    margin-bottom: 190px;
+    grid-column: 2;
+    grid-row: span 6;
+
+  }
+
+  &__list {
+    @include flex;
+
+    margin: 0;
+    grid-column: span 2;
+    grid-row: 7;
+    justify-content: space-between;
+  }
+
+  &__item {
+    @include flex-all-center;
+    position: relative;
+
+    span {
+      margin-right: 12px;
+      font-weight: 900;
+      font-size: 46px;
+      line-height: 130%;
+    }
+
+    &:not(:last-child)::after {
+      content: "";
+      display: block;
+      margin-left: 50px;
+      width: 10px;
+      height: 10px;
+      background-color: var(--primary);
+      border-radius: 50%;
+    }
+  }
+}

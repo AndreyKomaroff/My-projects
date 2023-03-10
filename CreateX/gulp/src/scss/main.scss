@@ -1,0 +1,19 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/courses";
+@import "./components/benefits";
+@import "./components/events";
+@import "./components/cert";
+@import "./components/team";
+@import "./components/reviews";
+
+
+// тестовые стили, удалите их

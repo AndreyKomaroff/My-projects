@@ -1,0 +1,76 @@
+.reviews {
+
+  padding-top: 180px;
+  padding-bottom: 160px;
+  background-color: #F4F5F7;
+
+  &__main {
+    padding: 0 105px;
+
+  }
+
+  &__title-block {
+
+    margin-bottom: 60px;
+    text-align: center;
+
+    span {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+  }
+
+  &__block {
+    position: relative;
+
+    padding: 64px 105px;
+    background-color: var(--white);
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+
+    &::before {
+      position: absolute;
+      left: 6%;
+      content: url('../img/main/braces.svg');
+    }
+  }
+
+  &__student {
+    @include flex;
+
+    align-items: center;
+
+    &-image {
+      margin-right: 20px;
+    }
+  }
+
+  &__param-name {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  &__param-course {
+    margin: 0;
+    color: var(--storm-gray);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+  }
+}
