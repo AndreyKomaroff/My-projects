@@ -2,6 +2,7 @@
 
   &__main {
     @include flex-all-center;
+
     flex-direction: column;
   }
 
@@ -13,9 +14,32 @@
     background-image: url(../img/vingot.jpg);
     background-size: cover;
     background-position: center;
+
+    @include small-mobile {
+      padding: 40px;
+    }
   }
+
+  &__hold {
+    @include flex-all-center;
+    margin: 0;
+    padding: 80px;
+    margin-bottom: 50px;
+    background-image: url(../img/griphold.jpg);
+    background-size: cover;
+    background-position: top;
+
+    @include small-mobile {
+      padding: 40px;
+    }
+  }
+
 
   &__btn {
     text-align: center;
+
+    @include mini-mobile {
+      padding: 10px;
+    }
   }
 }
