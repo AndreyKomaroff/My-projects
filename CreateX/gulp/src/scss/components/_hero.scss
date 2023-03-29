@@ -1,4 +1,5 @@
 .hero {
+  padding-top: 128px;
   background-image: url(../img/main/background.jpg);
 
 
@@ -6,7 +7,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(7, 1fr);
-
   }
 
   &__block {
@@ -14,12 +14,34 @@
     grid-column: 1;
     grid-row: 1 / 6;
 
+    &-player {
+      @include flex;
+
+      margin-bottom: 24px;
+      align-items: center;
+
+
+      svg {
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        border: 16px solid rgba(255, 63, 58, 0.12);
+      }
+
+      span {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+      }
+    }
+
     &--title {
+      margin: 0;
+      margin-bottom: 60px;
       font-weight: 900;
       font-size: 64px;
       line-height: 130%;
     }
-
 
     &--btn {
       @include flex;
@@ -27,7 +49,6 @@
       &__first {
         margin-right: 25px;
       }
-
     }
   }
 
@@ -36,7 +57,6 @@
     margin-bottom: 190px;
     grid-column: 2;
     grid-row: span 6;
-
   }
 
   &__list {

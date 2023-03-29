@@ -1,0 +1,129 @@
+.footer {
+
+  padding: 80px 0;
+  background-color: var(--ebony-clay);
+  color: var(--white);
+
+  &__main {
+    @include flex;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  &__block {
+    @include flex;
+
+    margin-right: 80px;
+    flex-direction: column;
+
+    &-logo {
+      margin-bottom: 24px;
+    }
+
+    &-social {
+      @include flex;
+
+      svg {
+        margin-right: 20px;
+        width: 24px;
+        height: 24px;
+        fill: var(--white);
+        opacity: .6;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__param {
+    margin: 0;
+    margin-bottom: 34px;
+    max-width: 279px;
+    opacity: .6;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    &-input {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 150%;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &__list {
+    @include flex;
+
+    margin-right: 80px;
+    max-width: 110px;
+    flex-direction: column;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    opacity: .6;
+  }
+
+  &__contacts {
+    @include flex;
+
+    margin-right: 80px;
+    flex-direction: column;
+  }
+
+  &__link {
+
+    @include flex;
+
+    margin-bottom: 10px;
+    color: inherit;
+    opacity: .6;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &-icon {
+      margin-right: 10px;
+      width: 16px;
+      height: 16px;
+      fill: var(--white);
+      opacity: .6;
+    }
+  }
+
+  &__input-block {
+    @include flex;
+
+
+    max-width: 286px;
+    flex-direction: column;
+  }
+
+  &__form {
+
+    &-input {
+      margin-bottom: 12px;
+      padding: 10px;
+      min-width: 286px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.12);
+    }
+  }
+}
