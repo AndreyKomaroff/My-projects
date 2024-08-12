@@ -1,0 +1,50 @@
+.title__first {
+  margin: 0;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  text-transform: uppercase;
+}
+
+.title__third {
+  margin-bottom: 2em;
+}
+
+.about {
+
+  &__main {
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+
+    //margin-right: 5em;
+    width: calc(100% / 3);
+    border-radius: 20px;
+
+  }
+
+  &__list {
+
+    padding: 2em;
+    width: calc(100% / 2);
+    background-color: var(--white_color);
+    border-radius: 20px;
+  }
+
+  &__item {
+
+    margin-bottom: .5em;
+
+    &--svg {
+      margin-right: 1em;
+      width: 1em;
+      height: 1em;
+    }
+  }
+}
+
+span {
+  color: var(--gold);
+}

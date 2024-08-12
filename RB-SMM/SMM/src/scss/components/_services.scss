@@ -1,0 +1,56 @@
+.title__second {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 66px;
+  line-height: 93%;
+  color: var(--alabaster);
+}
+
+.services {
+
+  padding-bottom: 2em;
+
+  &__main {
+    display: flex;
+    background: #141414;
+    color: var(--alabaster);
+    border-radius: 20px;
+
+
+    &--block {
+      padding: 5em 2em;
+      margin: 2em 0 2em 7em;
+      width: 60%;
+      border: 1px solid var(--alabaster);
+      border-radius: 20px;
+      background-image: url(../../img/Rectangle.png);
+
+      @include small-tablet {
+        margin: 10px 0 10px 35px;
+
+      }
+    }
+  }
+
+  &__title {
+    padding: 1em;
+    writing-mode: vertical-rl;
+    transform: scale(-1, -1);
+    text-align: center;
+    //transform-origin: bottom left;
+
+    @include small-tablet {
+      padding: 10px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 1em;
+
+   &--svg {
+    width: 1em;
+    height: 1em;
+   }
+  }
+
+}

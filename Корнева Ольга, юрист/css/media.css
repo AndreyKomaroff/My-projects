@@ -143,7 +143,6 @@
         left: -100%;
         top: 0;
         width: 100%;
-        /*background-color: blueviolet;*/
         padding: 20px;
         border-bottom: none;
         transition: transform .5s;
@@ -201,7 +200,6 @@
         line-height: 120%;
     }
 
-
     /*  about  */
 
     .about__bottom-item:nth-child(1) {
@@ -247,37 +245,31 @@
 
     .services__item:nth-child(2) {
         grid-column: 1;
-
         grid-row: 2;
     }
 
     .services__item:nth-child(3) {
         grid-column: 1;
-
         grid-row: 3;
     }
 
     .services__item:nth-child(4) {
         grid-column: 1;
-
         grid-row: 4;
     }
 
     .services__item:nth-child(5) {
         grid-column: 1;
-
         grid-row: 5;
     }
 
     .services__item:nth-child(6) {
         grid-column: 1;
-
         grid-row: 6;
     }
 
     .services__item:nth-child(7) {
         grid-column: 1;
-
         grid-row: 7;
     }
 
@@ -326,7 +318,6 @@
             url(../img/Ellipse-12.svg) bottom 30% center / 40px 40px no-repeat,
             url(../img/Ellipse-13.svg) bottom 40% right 15% / 15px 15px no-repeat,
             radial-gradient(50% 50% at 50% 50%, rgba(255, 235, 212, 1) 0%, rgba(255, 239, 220, 0) 100%);
-
     }
 
     .main__title {
@@ -353,7 +344,6 @@
             url(../img/Ellipse-28.svg) bottom 20% left 20% / 30px 30px no-repeat,
             url(../img/Star-7.svg) bottom left 70% / 30px 30px no-repeat;
         background-color: var(--mine-shaft);
-
     }
 
     .hero__bottom-title {
@@ -364,7 +354,6 @@
     .hero__bottom-second {
         grid-column: 1;
         grid-row: 2;
-
     }
 
     /*  about  */
@@ -380,8 +369,6 @@
             url(../img/Star-1.svg) top 30% right / 30px 30px no-repeat,
             radial-gradient(50% 50% at 30% 30%, rgba(255, 235, 212, 0.7) 0%, rgba(255, 239, 220, 0) 100%);
     }
-
-
 
     .about__list {
         grid-template-columns: 1fr;

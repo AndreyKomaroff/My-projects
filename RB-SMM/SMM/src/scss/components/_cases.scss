@@ -1,0 +1,70 @@
+.cases {
+
+  &__title {
+    margin-bottom: 1em;
+    color: var(--black_color);
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 90%;
+  }
+
+  &__main {
+    margin-bottom: 4em;
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-right {
+      padding: 2em;
+      width: 30%;
+      border: 1px solid var(--black_color);
+      border-radius: 20px;
+
+      @include tablet {
+        width: 100%;
+        margin-bottom: 1em;
+      }
+    }
+
+    &-left {
+      padding: 2em;
+      width: 30%;
+      border: 3px solid var(--gold);
+      border-radius: 20px;
+
+      @include tablet {
+        margin-bottom: 1em;
+        width: 100%;
+      }
+
+    }
+
+    &-list {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 125%;
+    }
+
+    &-item {
+      margin-bottom: .5em;
+    }
+
+    &-image {
+      max-width: 370px;
+      border-radius: 20px;
+      object-fit: cover;
+
+      @include tablet {
+        //width: fit-content;
+      }
+
+
+    }
+
+  }
+
+}
