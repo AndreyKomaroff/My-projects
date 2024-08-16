@@ -1,14 +1,6 @@
-.title__second {
-  font-family: var(--second-family);
-  font-weight: 400;
-  font-size: 66px;
-  line-height: 93%;
-  color: var(--alabaster);
-}
-
 .services {
 
-  padding-bottom: 2em;
+  //padding-bottom: 2em;
 
   &__main {
     display: flex;
@@ -24,11 +16,20 @@
       border: 1px solid var(--alabaster);
       border-radius: 20px;
       background-image: url(../../img/Rectangle.png);
+      background-repeat: no-repeat;
+      background-size: cover;
 
       @include small-tablet {
         margin: 10px 0 10px 35px;
+        width: 100%;
+      }
+
+      @include small-mobile {
+        margin: 7px 0 7px 15px;
+        padding: 3em 1em;
 
       }
+
     }
   }
 
@@ -46,6 +47,18 @@
 
   &__item {
     margin-bottom: 1em;
+
+    @include mobile {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 120%;
+    }
+
+    @include small-mobile {
+      font-size: 10px;
+      line-height: 110%;
+    }
+
 
    &--svg {
     width: 1em;

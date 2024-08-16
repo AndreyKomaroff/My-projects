@@ -3,9 +3,6 @@
   &__title {
     margin-bottom: 1em;
     color: var(--black_color);
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 90%;
   }
 
   &__main {
@@ -28,6 +25,10 @@
         width: 100%;
         margin-bottom: 1em;
       }
+
+      @include small-mobile {
+        padding: .7em;
+      }
     }
 
     &-left {
@@ -41,16 +42,36 @@
         width: 100%;
       }
 
+      @include small-mobile {
+        padding: .7em;
+      }
+
+
     }
 
     &-list {
       font-weight: 500;
       font-size: 16px;
       line-height: 125%;
+
+
     }
 
     &-item {
       margin-bottom: .5em;
+
+      @include mobile {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 125%;
+
+      }
+
+      @include small-mobile {
+        font-size: 10px;
+        line-height: 110%;
+      }
+
     }
 
     &-image {
@@ -58,8 +79,12 @@
       border-radius: 20px;
       object-fit: cover;
 
-      @include tablet {
-        //width: fit-content;
+      @include mobile {
+        max-width: 320px;
+      }
+
+      @include small-mobile {
+        max-width: 270px;
       }
 
 
