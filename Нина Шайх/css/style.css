@@ -224,13 +224,6 @@ section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    background: url(../img/Rectangle-28.svg) top 20% left / 40px 80px no-repeat,
-        url(../img/Rectangle-26.svg) bottom 20% left 5px / 50px 100px no-repeat,
-        url(../img/Rectangle-27.svg) top center / 100px 70px no-repeat,
-        url(../img/Ellipse-12.svg) bottom 30% center / 40px 40px no-repeat,
-        url(../img/Ellipse-13.svg) bottom 40% right 15% / 15px 15px no-repeat,
-        url(../img/Star-1.svg) top 20% right / 30px 60px no-repeat,
-        radial-gradient(50% 50% at 50% 50%, rgba(255, 235, 212, 1) 0%, rgba(255, 239, 220, 0) 100%);
 }
 
 .hero__picture {
@@ -272,12 +265,7 @@ section {
 
 .hero__bottom {
     padding: 60px 40px;
-    /*display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 25px;*/
     color: var(--white);
-    background: url(../img/Star-7.svg) top 15% right 20% / 20px 50px no-repeat;
     background-color: var(--mine-shaft);
 }
 
@@ -316,14 +304,6 @@ section {
 
 .about__main {
     padding: 80px 0;
-    background: url(../img/Ellipse-13.svg) top 10% left 10% / 20px 20px no-repeat,
-        url(../img/Ellipse-12.svg) bottom 5px left 10% / 30px 30px no-repeat,
-        url(../img/Rectangle-27.svg) top left 35% / 100px 70px no-repeat,
-        url(../img/Ellipse-12.svg) top 20% left 55% / 40px 40px no-repeat,
-        url(../img/Ellipse-13.svg) bottom 40% right 15% / 15px 15px no-repeat,
-        url(../img/Rectangle-27.svg) bottom 10% left 55% / 100px 70px no-repeat,
-        url(../img/Star-1.svg) top 20% right / 30px 60px no-repeat,
-        radial-gradient(50% 50% at 30% 30%, rgba(255, 235, 212, 0.7) 0%, rgba(255, 239, 220, 0) 100%);
 }
 
 .about__left {
@@ -372,17 +352,10 @@ section {
 
 .about__bottom {
     flex-direction: column;
-    background:
-        url(../img/Star-1.svg) bottom 35% left 10% / 30px 30px no-repeat,
-        url(../img/Ellipse-12.svg) top 20% left 55% / 40px 40px no-repeat,
-        url(../img/Ellipse-13.svg) bottom 40% right 15% / 15px 15px no-repeat,
-        url(../img/Rectangle-27.svg) bottom 10% left 25% / 100px 70px no-repeat,
-        url(../img/Star-1.svg) top 20% right 10% / 20px 60px no-repeat,
-        radial-gradient(50% 50% at 80% 50%, rgba(255, 235, 212, 0.7) 0%, rgba(255, 239, 220, 0) 100%);
-
 }
 
 .about__bottom-list {
+    margin-bottom: 2em;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, minmax(50px, 80px));
@@ -440,12 +413,6 @@ section {
     padding: 80px 0;
     display: flex;
     flex-direction: column;
-    background:
-        url(../img/Star-1.svg) bottom 2% left 10% / 30px 30px no-repeat,
-        url(../img/Ellipse-12.svg) bottom 5% right 5% / 40px 40px no-repeat,
-        url(../img/Ellipse-13.svg) top 5% right 50% / 15px 15px no-repeat,
-        url(../img/Star-1.svg) top 10% right 10% / 20px 60px no-repeat,
-        radial-gradient(50% 50% at 30% 50%, rgba(255, 235, 212, 0.7) 0%, rgba(255, 239, 220, 0) 100%);
 }
 
 .services__list {
@@ -468,41 +435,6 @@ section {
     border: 0.5px solid var(--mine-shaft);
     border-radius: 10px;
 }
-
-/*.services__item:nth-child(1) {
-    grid-column: 1 / 8;
-    grid-row: 1;
-}
-
-.services__item:nth-child(2) {
-    grid-column: 8 / 10;
-    grid-row: 1;
-}
-
-.services__item:nth-child(3) {
-    grid-column: 1 / 4;
-    grid-row: 2;
-}
-
-.services__item:nth-child(4) {
-    grid-column: 4 / 9;
-    grid-row: 2;
-}
-
-.services__item:nth-child(5) {
-    grid-column: 9 / 10;
-    grid-row: 2;
-}
-
-.services__item:nth-child(6) {
-    grid-column: 1 / 5;
-    grid-row: 3;
-}
-
-.services__item:nth-child(7) {
-    grid-column: 5 / 10;
-    grid-row: 3;
-}*/
 
 .btn__second {
     text-align: center;
@@ -541,10 +473,6 @@ section {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 30px;
-    background:
-        url(../img/Star-7.svg) bottom 60% left 10% / 30px 30px no-repeat,
-        url(../img/Ellipse-26.svg) bottom 10% left 15% / 25px 25px no-repeat,
-        url(../img/Rectangle-30.svg) bottom 45% left 15% / 100px 70px no-repeat;
     background-color: var(--mine-shaft);
     color: var(--white);
 }
@@ -644,7 +572,44 @@ section {
     line-height: 100%;
 }
 
-.accordeon:not(.is-active) .content {
+.swiper-container {
+    position: relative;
+    overflow: hidden;
+}
+  
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--orange_color);
+}
+  
+.swiper-pagination-bullet-active {
+    background: var(--orange_color, var(--swiper-theme-color));
+}
+  
+.slider__main {
+    padding: 50px 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light-black_color);
+    color: var(--white_color);
+}
+
+.slider__block {
+    padding: 30px 50px;
+}
+  
+.slider__contant {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+   
+
+/*.accordeon:not(.is-active) .content {
     max-height: 0;
 }
   
@@ -652,4 +617,7 @@ section {
     transition: max-height 0.5s ease-in-out;
     overflow: hidden;
 }
-  
+
+.control {
+    cursor: pointer;
+}

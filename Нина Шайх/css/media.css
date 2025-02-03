@@ -87,9 +87,6 @@
         grid-template-rows: repeat(5, auto);
         gap: 30px;
         justify-items: center;
-        background:
-            url(../img/Ellipse-26.svg) bottom 10% left 15% / 25px 25px no-repeat,
-            url(../img/Rectangle-30.svg) bottom 45% left 15% / 100px 70px no-repeat;
         background-color: var(--mine-shaft);
         color: var(--white);
     }
@@ -315,13 +312,6 @@
         grid-template-rows: repeat(4, auto);
         gap: 30px;
         justify-items: center;
-
-        background: url(../img/Rectangle-28.svg) top 20% left / 40px 80px no-repeat,
-            url(../img/Rectangle-26.svg) bottom 20% left 5px / 50px 100px no-repeat,
-            url(../img/Rectangle-27.svg) top center / 100px 70px no-repeat,
-            url(../img/Ellipse-12.svg) bottom 30% center / 40px 40px no-repeat,
-            url(../img/Ellipse-13.svg) bottom 40% right 15% / 15px 15px no-repeat,
-            radial-gradient(50% 50% at 50% 50%, rgba(255, 235, 212, 1) 0%, rgba(255, 239, 220, 0) 100%);
     }
 
     .main__title {
@@ -344,9 +334,6 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         gap: 25px;
-        background: url(../img/Ellipse-26.svg) top 10% right / 60px 60px no-repeat,
-            url(../img/Ellipse-28.svg) bottom 20% left 20% / 30px 30px no-repeat,
-            url(../img/Star-7.svg) bottom left 70% / 30px 30px no-repeat;
         background-color: var(--mine-shaft);
     }
 
@@ -364,14 +351,6 @@
 
     .about__main {
         padding: 30px 10px;
-        background: url(../img/Ellipse-13.svg) top 10% left / 20px 20px no-repeat,
-            url(../img/Ellipse-12.svg) bottom 5px left 10% / 30px 30px no-repeat,
-            url(../img/Rectangle-27.svg) top right / 100px 70px no-repeat,
-            url(../img/Ellipse-12.svg) top 20% left 55% / 40px 40px no-repeat,
-            url(../img/Ellipse-13.svg) bottom 40% right 15% / 15px 15px no-repeat,
-            url(../img/Rectangle-27.svg) bottom 10% left 55% / 100px 70px no-repeat,
-            url(../img/Star-1.svg) top 30% right / 30px 30px no-repeat,
-            radial-gradient(50% 50% at 30% 30%, rgba(255, 235, 212, 0.7) 0%, rgba(255, 239, 220, 0) 100%);
     }
 
     .about__list {
@@ -398,14 +377,6 @@
 
     .about__bottom {
         flex-direction: column;
-        background:
-            url(../img/Star-1.svg) bottom left / 30px 30px no-repeat,
-            url(../img/Ellipse-12.svg) top 20% left 55% / 40px 40px no-repeat,
-            url(../img/Ellipse-13.svg) bottom 40% right 15% / 15px 15px no-repeat,
-            url(../img/Rectangle-27.svg) bottom 10% left 25% / 100px 70px no-repeat,
-            url(../img/Star-1.svg) top right / 20px 60px no-repeat,
-            radial-gradient(50% 50% at 80% 50%, rgba(255, 235, 212, 0.7) 0%, rgba(255, 239, 220, 0) 100%);
-
     }
 
 
@@ -413,12 +384,6 @@
 
     .services__main {
         padding: 30px 10px;
-        background:
-            url(../img/Star-1.svg) bottom left / 30px 30px no-repeat,
-            url(../img/Ellipse-12.svg) bottom 5% right 5% / 40px 40px no-repeat,
-            url(../img/Ellipse-13.svg) top 5% right 50% / 15px 15px no-repeat,
-            url(../img/Star-1.svg) top right / 20px 60px no-repeat,
-            radial-gradient(50% 50% at 30% 50%, rgba(255, 235, 212, 0.7) 0%, rgba(255, 239, 220, 0) 100%);
     }
 
 
@@ -427,8 +392,6 @@
         /*grid-template-columns: 1fr;
         grid-template-rows: repeat(3, auto);*/
         gap: 20px;
-        background:
-            url(../img/Ellipse-26.svg) bottom left / 25px 25px no-repeat;
         background-color: var(--mine-shaft);
         color: var(--white);
     }
